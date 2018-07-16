@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">DTU Smart Attender</string>
+    <string name="title_activity_main">Main</string>
+    <string-array name="year">
+        <item>Btech_1st_Year</item>
+        <item>Btech_2nd_Year</item>
+        <item>Btech_3rd_Year</item>
+        <item>Btech_4rth_Year</item>
+        <item>Mtech_1st_Year</item>
+        <item>Mtech_2nd_Year</item>
+    </string-array>
+
+    <string-array name="Btech_1">
+        <item>Group_A</item>
+        <item>Group_B</item>
+    </string-array>
+
+    <string-array name="Btech_all">
+        <item>Btech_BT</item>
+        <item>Btech_Civil</item>
+        <item>Btech_COE</item>
+        <item>Btech_ECE</item>
+        <item>Btech_EEE</item>
+        <item>Btech_EE</item>
+        <item>Btech_ME</item>
+        <item>Btech_PE</item>
+    </string-array>
+
+
+    <string-array name="Mtech_all">
+        <item>Mtech_Speci_1</item>
+        <item>Mtech_speci_2</item>
+        <item>Mtech_speci_3</item>
+        <item>Mtech_speci_4</item>
+    </string-array>
+
+    <string-array name="Btech_1_sections_of_A">
+        <item>A1</item>
+        <item>A2</item>
+        <item>A3</item>
+        <item>A4</item>
+        <item>A5</item>
+        <item>A6</item>
+        <item>A7</item>
+        <item>A8</item>
+        <item>A9</item>
+        <item>A10</item>
+    </string-array>
+
+
+    <string-array name="Btech_1_sections_of_B">
+        <item>B1</item>
+        <item>B2</item>
+        <item>B3</item>
+        <item>B4</item>
+        <item>B5</item>
+        <item>B6</item>
+        <item>B7</item>
+        <item>B8</item>
+        <item>B9</item>
+        <item>B10</item>
+    </string-array>
+
+    <string-array name="Btech_all_sections">
+        <item>Section_C</item>
+        <item>Section_D</item>
+        <item>Section_E</item>
+    </string-array>
+
+    <string-array name="Mtech_all_sections">
+        <item>Sec_1</item>
+        <item>Sec_2</item>
+        <item>Sec_3</item>
+        <item>Sec_4</item>
+    </string-array>
+
+    <string-array name="class_type">
+        <item>Regular_class</item>
+        <item>Tutorial_class</item>
+        <item>Lab</item>
+    </string-array>
+
+    <string-array name="frequency">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Present</item>
+        <item>Absent</item>
+    </string-array>
+
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_new_main">new_main</string>
+
+</resources>

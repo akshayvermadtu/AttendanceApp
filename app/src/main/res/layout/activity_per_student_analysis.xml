@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_per_student_analysis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.akshayvermadtugmail.dtusmartattender.per_student_analysis">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView27"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:text="Roll no. :-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView33"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView27" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView33"
+        android:layout_toEndOf="@+id/textView33"
+        android:layout_marginStart="58dp"
+        android:id="@+id/textView34"
+        android:textStyle="normal|bold"
+        android:textSize="26dp" />
+
+    <TextView
+        android:text="Percentage :-\nAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView33"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView35"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_alignStart="@+id/textView34"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/textView36"
+        android:textSize="26dp"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/textView35"
+        android:id="@+id/progressBar3"
+        android:layout_toStartOf="@+id/textView37"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_red_dark" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView37"
+        android:textSize="18sp"
+        android:layout_toStartOf="@+id/textView27"
+        android:layout_below="@+id/textView36"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:text="Student History"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView38"
+        android:textStyle="normal|bold"
+        android:textSize="22dp"
+        android:layout_below="@+id/textView37"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView38"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/customborder">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView39"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp" />
+    </ScrollView>
+
+    <Button
+        android:text="Notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button17"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp"
+        android:id="@+id/button18" />
+
+    <Button
+        android:text="Add ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button17"
+        android:layout_marginStart="23dp"
+        android:layout_below="@+id/textView37"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Available ID :-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView41"
+        android:textSize="16dp"
+        android:layout_alignBaseline="@+id/textView40"
+        android:layout_alignBottom="@+id/textView40"
+        android:layout_alignEnd="@+id/button17"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="No ID available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView40"
+        android:textSize="16dp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/button17"
+        android:layout_marginStart="100dp" />
+
+
+</RelativeLayout>

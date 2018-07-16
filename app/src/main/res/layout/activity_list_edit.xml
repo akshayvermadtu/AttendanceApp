@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_list_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akshayvermadtugmail.dtusmartattender.list_edit">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView56"
+        android:text="This section lets you to edit a particular record you want"
+        android:textSize="24sp"
+        android:background="#2196f3"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"/>
+
+    <TextView
+        android:text="Available Records"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView56"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView57"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:text="Tap on a record to edit it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView58"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView57"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView58"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/customborder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_layout_edit"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </ScrollView>
+
+
+</RelativeLayout>

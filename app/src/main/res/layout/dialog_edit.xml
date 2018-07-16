@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView_roll_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView_roll_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select new Status from below"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customborder"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp">
+
+        <RadioButton
+            android:id="@+id/radioP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Present"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:checked="true"
+            android:paddingLeft="10dip"/>
+
+        <RadioButton
+            android:id="@+id/radioA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absent"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:paddingLeft="16dip"
+            android:layout_marginTop="10dp" />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

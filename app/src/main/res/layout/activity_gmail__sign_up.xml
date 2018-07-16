@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gmail__sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akshayvermadtugmail.dtusmartattender.Gmail_SignUp"
+    android:background="@android:color/background_light"
+    android:screenOrientation="portrait" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:id="@+id/ll"
+        android:background="#2196f3"
+        android:layout_height="200dp">
+
+        <TextView
+            android:text="WELCOME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="30sp"
+            android:textColor="@android:color/background_light"
+            android:textStyle="normal|bold"
+            android:gravity="center"
+            android:layout_marginTop="30dp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:text="Next ->"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button14"
+        android:layout_marginBottom="40dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textSize="24sp"
+        android:background="#1e88e5"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:color/background_light"
+        android:layout_height="300dp"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+
+            android:id="@+id/imageView2"
+            android:background="@drawable/dtulogo"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="40dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:text=""
+            android:hint="Type your Email ID here"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:background="#90caf9"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="normal|bold"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            android:paddingRight="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

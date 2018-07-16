@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akshayvermadtugmail.dtusmartattender">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/new_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name=".CachedFileProvider"
+            android:authorities="com.akshayvermadtugmail.dtusmartattender.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+
+        <activity
+            android:name=".Gmail_SignUp"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main"
+            android:label="Main Menu"
+            android:parentActivityName=".Gmail_SignUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.Main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".new_record"
+            android:label="Fill Details"
+            android:parentActivityName=".Main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.new_record" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".new_roll"
+            android:label="Attendance mode"
+            android:parentActivityName=".new_record"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.new_roll" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".recents"
+            android:label="Recents"
+            android:parentActivityName=".Main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.recents" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Analyse"
+            android:label="Analyse"
+            android:parentActivityName=".Main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.Analyse" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Link"
+            android:label="Link IDs"
+            android:parentActivityName=".Main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.Link" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View_recents"
+            android:label="View_recents"
+            android:parentActivityName=".Main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.View_recents" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Recent_batch_records"
+            android:label="Batch-wise Record"
+            android:parentActivityName=".recents"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.Recent_batch_records" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view_analysis"
+            android:label="View_percentage"
+            android:parentActivityName=".Analyse"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.view_analysis" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".about_app"
+            android:label="About App"
+            android:parentActivityName=".advanced_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.about_app" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".per_student_analysis"
+            android:label="Per student analysis"
+            android:parentActivityName=".Analyse"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.per_student_analysis" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Send_record"
+            android:label="Send Record"
+            android:parentActivityName=".Link"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.Send_record" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Edit_records"
+            android:label="Edit Record"
+            android:parentActivityName=".View_recents"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.Edit_records" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Check"
+            android:label="Delete Record"
+            android:parentActivityName=".advanced_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.Check" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".show_absentees"
+            android:label="Advanced Settings"
+            android:parentActivityName=".View_recents"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.show_absentees" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".advanced_settings"
+            android:label="Advanced Settings"
+            android:parentActivityName=".Main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.advanced_settings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".list_edit"
+            android:label="Edit Record"
+            android:parentActivityName=".advanced_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.list_edit" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".edit_roll_list"
+            android:label="Edit Record"
+            android:parentActivityName=".list_edit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.akshayvermadtugmail.dtusmartattender.edit_roll_list" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

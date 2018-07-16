@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_advanced_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.akshayvermadtugmail.dtusmartattender.advanced_settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/customborder"
+        android:layout_margin="10dp"
+        android:paddingBottom="20dp">
+
+    <Button
+        android:text="Delete Record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button24"
+        android:textSize="28sp"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/button_style2"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp" />
+
+    <Button
+        android:text="Edit Record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button28"
+        android:textSize="28sp"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/button_style2"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp" />
+
+    <Button
+        android:text="About the App"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button28"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button29"
+        android:textSize="28sp"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/button_style2"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/dtulogo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp" />
+</RelativeLayout>
